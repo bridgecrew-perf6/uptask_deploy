@@ -1,0 +1,45 @@
+{
+  "name": "1-uptask",
+  "version": "1.0.0",
+  "description": "uptask",
+  "main": "index.js",
+  "scripts": {
+    "desarrollo": "concurrently \"npm run dev\" \"npm run watch\" ",
+    "dev": "nodemon index.js",
+    "start": "node ./index.js",
+    "watch": "webpack -w --mode development"
+  },
+  "author": "Francisco kataldo",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcrypt-nodejs": "^0.0.3",
+    "concurrently": "^6.5.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "express-validator": "^5.3.1",
+    "html-to-text": "^8.1.0",
+    "juice": "^8.0.0",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.7.2",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.2",
+    "sequelize": "^7.0.0-alpha.2",
+    "shortid": "^2.2.16",
+    "slug": "^5.2.0",
+    "sweetalert2": "^11.3.1",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "babel-loader": "^8.2.3",
+    "nodemon": "^2.0.15",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
